@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+
+html,
+body {
+    background-color: #18171D;
+}
+
+.preloadermob {
+    display: none;
+}
+
+.preloader {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 999999;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fae903;
+}
+
+@-webkit-keyframes fadeout {
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.hide-preloader {
+    -webkit-animation: fadeout 2s ease-out forwards;
+    animation: fadeout 2s ease-out forwards;
+}
+
+
+h1 {
+    font-family: 'Source Sans Pro',
+        sans-serif;
+    color: white;
+    font-size: 50px;
+    letter-spacing: 40px;
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width:1200px) {
+    .preloader {
+        display: none;
+    }
+
+    .preloadermob {
+        position: fixed;
+        left: 0%;
+        top: 0%;
+        right: 0%;
+        bottom: 0%;
+        z-index: 999999;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: #fae903;
+    }
+
+    #preloadermob {
+        width: 100%;
+    }
+
+    h1 {
+        font-family: 'Source Sans Pro',
+            sans-serif;
+        color: white;
+        font-size: 10px;
+        letter-spacing: 10px;
+    }
+
+}
